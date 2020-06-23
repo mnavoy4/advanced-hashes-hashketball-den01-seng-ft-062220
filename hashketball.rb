@@ -147,7 +147,6 @@ def shoe_size(name)
   game_hash.each do |place, detail|
     detail.each do |player, stat|
       next unless player == :players
-      binding.pry
       stat.each do |info|
         if info[:player_name] == name
           return info[:shoe]
