@@ -191,7 +191,6 @@ def player_stats(name)
       next unless player == :players
       stat.each do |info|
         next unless info[:player_name] == name
-
         new_hash = info
       end
     end
