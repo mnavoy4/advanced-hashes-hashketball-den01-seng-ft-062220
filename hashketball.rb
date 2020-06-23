@@ -1,4 +1,5 @@
 # Write your code below game_hash
+require 'pry'
 def game_hash
   game_hash = {
     home: {
@@ -146,6 +147,7 @@ def shoe_size(name)
   game_hash.each do |place, detail|
     detail.each do |player, stat|
       next unless player == :players
+      binding.pry
       stat.each do |info|
         if info[:player_name] == name
           return info[:shoe]
